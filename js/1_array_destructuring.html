@@ -1,0 +1,39 @@
+<h3>Array Destructuring</h3>
+<p>
+  It is basically used to extract values from array into separate variables.
+</p>
+<hr />
+Output :
+<hr />
+<script>
+  const mylang = ['js', 'php', 'java', 'python', 'c++'];
+
+  //old way to get values
+  // var top1 = mylang[0];
+  // var top2 = mylang[1];
+  // var top3 = mylang[2];
+
+  // document.write(top2);
+
+  // =================================
+  // es6 - new way
+  // =================================
+  let [top1, top2, top3, top4, top5] = mylang;
+  document.write(
+    top1 + '<br>' + top2 + '<br>' + top3 + '<br>' + top4 + '<br>' + top5
+  );
+
+  // ================================
+  // get frist and last value
+  // ================================
+  // let [top1, , , , top5] = mylang;
+  // document.write(
+  //   `First value is <b>${top1}</b> and last value is <b>${top5}</b>`
+  // );
+
+  // ================================
+  // get first 2 only
+  // ================================
+  // let [top1, top2] = mylang;
+  // document.write(top1 + '---' + top2);
+</script>
