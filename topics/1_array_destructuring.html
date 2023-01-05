@@ -36,4 +36,23 @@ Output :
   // ================================
   // let [top1, top2] = mylang;
   // document.write(top1 + '---' + top2);
+
+  // ================================
+  // swap 2 variable values using array destructuring
+  // ================================
+  var a = 5;
+  var b = 10;
+  document.write(`<br><br><br>Default values:<br>`);
+  document.write(`A : ${a} || B : ${b}<br>`);
+
+  // old way
+  // var temp = a;
+  // a = b;
+  // b = temp;
+  // document.write(`A : ${a} || B : ${b}<br>`);
+
+  // new way
+  [a, b] = [b, a];
+  document.write(`<br>swapped values:<br>`);
+  document.write(`A : ${a} || B : ${b}<br>`);
 </script>
