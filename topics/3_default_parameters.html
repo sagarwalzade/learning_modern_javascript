@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="../styles.css" />
+<div class="topic_header">
+  <h3><b>Topic :</b> Default Parameters</h3>
+  <p>
+    <b>Details :</b> Default parameters allow to pass default value if no value
+    or undefined is passed to function parameters
+  </p>
+  <div>Execution Below</div>
+</div>
+
+<script>
+  // if we pass only 1 argument to function then it shows NaN.
+  // function multiply(a, b) {
+  //   document.write(a * b);
+  // }
+  // multiply(4); // OUTPUT : NaN
+
+  // to avoid blank or undefined value we have to write extra line like below
+  // so here if second parameter is not passed then we are taking default value.
+  // function multiply(a, b) {
+  //   b = typeof b !== 'undefined' ? b : 2;
+  //   document.write(a * b);
+  // }
+  // multiply(4); // OUTPUT : 8
+
+  // ES6 to avoid that extra line we have default parameter option now in es6
+  // just need to pass value after parameter in function declaration
+  // function multiply(a, b = 2) {
+  //   document.write(a * b);
+  // }
+  // multiply(4); // OUTPUT : 8
+
+  // ES6 : default parameter with fat arrow function
+  const multiply = (a, b = 6) => {
+    document.write(`Multiplication is ${a * b}`);
+  };
+  multiply(10); // OUTPUT : Multiplication is 60
+</script>
