@@ -1,10 +1,22 @@
+<div class="topic_header">
+  <h3><b>Topic :</b> Array Destructuring</h3>
+  <p>
+    <b>Details :</b> It is basically used to extract values from array into
+    separate variables.
+  </p>
+  <center>Execution Below</center>
+</div>
+
+<!-- <hr />
+<center><b>Topic</b></center>
+<hr />
 <h3>Array Destructuring</h3>
 <p>
   It is basically used to extract values from array into separate variables.
 </p>
 <hr />
-Output :
-<hr />
+<center><b>Execution</b></center>
+<hr /> -->
 <script>
   const mylang = ['js', 'php', 'java', 'python', 'c++'];
 
@@ -13,7 +25,7 @@ Output :
   // var top2 = mylang[1];
   // var top3 = mylang[2];
 
-  // document.write(top2);
+  // document.write(top2); // Output : php
 
   // =================================
   // es6 - new way
@@ -23,6 +35,13 @@ Output :
     top1 + '<br>' + top2 + '<br>' + top3 + '<br>' + top4 + '<br>' + top5
   );
 
+  // Output :
+  // js
+  // php
+  // java
+  // python
+  // c++
+
   // ================================
   // get frist and last value
   // ================================
@@ -31,11 +50,17 @@ Output :
   //   `First value is <b>${top1}</b> and last value is <b>${top5}</b>`
   // );
 
+  // Output :
+  // First value is js and last value is c++
+
   // ================================
   // get first 2 only
   // ================================
   // let [top1, top2] = mylang;
   // document.write(top1 + '---' + top2);
+
+  // Output :
+  // js---php
 
   // ================================
   // swap 2 variable values using array destructuring
@@ -55,4 +80,11 @@ Output :
   [a, b] = [b, a];
   document.write(`<br>swapped values:<br>`);
   document.write(`A : ${a} || B : ${b}<br>`);
+
+  // Output :
+  // Default values:
+  // A : 5 || B : 10
+
+  // swapped values:
+  // A : 10 || B : 5
 </script>
