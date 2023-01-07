@@ -83,3 +83,14 @@ h1 {
   margin-bottom: 25px;
   padding-left: 15px;
 }
+
+.back_btn {
+  float: right;
+  color: #0955a4;
+  text-decoration: none;
+  padding: 0px 8px;
+  padding-bottom: 3px;
+  margin-top: 33px;
+  background-color: white;
+  border: 1px solid #0955a4;
+}
