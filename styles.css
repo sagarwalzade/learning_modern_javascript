@@ -68,6 +68,8 @@ h1 {
   line-height: 1.5;
   font-size: 16px;
   border-bottom: 2px solid #0955a4;
+  float: left;
+  width: 100%;
 }
 .topic_header h3 b {
   font-weight: bold;
@@ -89,11 +91,13 @@ h1 {
 .topic_header div {
   background-color: #0955a4;
   color: white;
-  padding-bottom: 4px;
+  padding-bottom: 1px;
   font-weight: 500;
   font-size: 12px;
   margin-bottom: 25px;
   padding-left: 15px;
+  float: left;
+  width: 100%;
 }
 
 .back_btn {
