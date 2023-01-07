@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="../styles.css" />
+<div class="topic_header">
+  <h3><b>Topic :</b> Template Literals / Template Strings</h3>
+  <p>
+    <b>Details :</b> Its a new way to concatinate variables or expression insdie
+    string by avoiding "+" sign.
+  </p>
+  <div>Execution Below <a class="back_btn" href="/">Back to Home</a></div>
+</div>
+
+<script>
+  let firstname = 'Suresh';
+  let lastname = 'Raina';
+
+  // es5
+  document.write(
+    'First name is ' + firstname + ' and last name is ' + lastname + '.'
+  );
+  // output : First name is Suresh and last name is Raina.
+
+  // es6
+  document.write(`First name is ${firstname} and last name is ${lastname}.`);
+  // output : First name is Suresh and last name is Raina.
+</script>
+
+<script>
+  let a = 20;
+  let b = 30;
+
+  // es5
+  console.log('Fifty is ' + (a + b) + ' and \nnot ' + (2 * a + b) + '.');
+  // output : Fifty is 50 and
+  //          not 70.
+  // Explaination : we have used expression and used \n to get next text in new line
+
+  // es6
+  console.log(`Fifty is ${a + b} and 
+  not ${2 * a + b}.`);
+  // output : Fifty is 50 and
+  //  not 70.
+  // Explaination : here we have to use backtick and we just have to write text in new line. (\n not required).
+</script>

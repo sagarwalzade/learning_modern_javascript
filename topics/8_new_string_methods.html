@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../styles.css" />
+<div class="topic_header">
+  <h3><b>Topic :</b> Template Literals / Template Strings</h3>
+  <p>
+    <b>Details :</b> ES6 introduced new string functions like startsWith,
+    endsWith, includes and repeat.
+  </p>
+  <div>Execution Below <a class="back_btn" href="/">Back to Home</a></div>
+</div>
+
+<script>
+  let firstname = 'Suresh';
+  let lastname = 'Raina';
+
+  // startsWith() : check value first letter and its case sensitive
+  console.log(`${firstname}`.startsWith('S')); // output : true
+  console.log(`${firstname}`.startsWith('s')); // output : false
+
+  // endsWith() : check value last letter and its case sensitive
+  console.log(`${firstname}`.endsWith('H')); // output : false
+  console.log(`${firstname}`.endsWith('h')); // output : true
+
+  // includes() : check value present in variable or not and its case sensitive
+  console.log(`${firstname}`.includes('ra')); // output : false
+  console.log(`${firstname}`.includes('resh')); // output : true
+  console.log(`${firstname}`.includes('RESH')); // output : false
+
+  // repeat() : repeat value multiple times
+  console.log(`${firstname} `.repeat(3)); // output : Suresh Suresh Suresh
+  console.log(`${firstname} ${lastname} `.repeat(2)); // output : Suresh Raina Suresh Raina
+</script>
