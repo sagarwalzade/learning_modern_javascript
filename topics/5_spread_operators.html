@@ -7,7 +7,7 @@
     concatinate.
     <a class="back_btn" href="/">Back to Home</a>
   </p>
-  <div>Execution Below</div>
+  <div>Execution Below <a class="back_btn" href="/">Back to Home</a></div>
 </div>
 
 <script>
@@ -48,20 +48,19 @@
   arr1 = [...arr1, ...arr2, ...arr3];
   console.log(arr1); // Output : (9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-
   // es5 copy array
-  var arrc1 = [1,2,3];
+  var arrc1 = [1, 2, 3];
   var arrc2 = arrc1;
   console.log(arrc2); // output : (3) [1, 2, 3]
 
   // problem statement
-  arrc2.push(4,5);
+  arrc2.push(4, 5);
   console.log(arrc2); // output correct : (5) [1, 2, 3, 4, 5]
   console.log(arrc1); // output wrong : (5) [1, 2, 3, 4, 5]
   // here values also added in arrc1 that should not be done.
 
   // es6 : issue fixed in es6
-  var arrrc1 = [1,2,3];
+  var arrrc1 = [1, 2, 3];
   var arrrc2 = [...arrrc1, 4, 5];
   console.log(arrrc2); // output : (5) [1, 2, 3, 4, 5]
   console.log(arrrc1); // output issue fixed : (3) [1, 2, 3]

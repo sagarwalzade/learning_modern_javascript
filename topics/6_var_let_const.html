@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="../styles.css" />
+<div class="topic_header">
+  <h3><b>Topic :</b> Var / Let / Const Difference</h3>
+  <p>
+    <b>Details :</b> Var : is used for functional scope and let/const having
+    block level scope.
+  </p>
+  <div>Execution Below <a class="back_btn" href="/">Back to Home</a></div>
+</div>
+
+<script>
+  // Check Accessibility
+
+  // Var is used in es5 and it is having a function scope that means it can accessible everywhere in that particular function. within if else block also.
+
+  function var_test(value) {
+    if (value) {
+      var name = 'Rajesh';
+      console.log(name); // accessible here also | output : Rajesh
+    }
+    console.log(name); // accessible outside if also | output : Rajesh
+  }
+  var_test(true);
+
+  function let_const_test(value) {
+    if (value) {
+      let name = 'Suresh';
+      const surname = 'Sharma';
+      console.log(name); // accessible here | output : Suresh
+      console.log(surname); // accessible here | output : Sharma
+    }
+    console.log(name); // not accessible outside of if because let having block scope. it can accessible inside if only.
+    // console.log(surname); // ERROR : surname is not defined
+  }
+  let_const_test(true);
+
+  // Check Value Asign Process
+
+  // var value can be change anywhere within function or global block
+  var country = 'India';
+  if (true) {
+    var country = 'USA';
+    console.log(country); // output : USA
+  }
+  console.log(country); // output : USA
+
+  // let and const value can be block level so inside block variable can be separate from the outside if variables.
+  let state = 'Maharashtra';
+  const food = 'Rasmalai';
+  if (true) {
+    let state = 'Karnataka';
+    const food = 'Jilebi';
+    console.log(state); // output : Karnataka
+    console.log(food); // output : Jilebi
+  }
+  console.log(state); // output : Maharashtra
+  console.log(food); // output : Rasmalai
+
+  // const value can not be set again in same block
+  //const actor = 'Amitabh Bachhan';
+  //actor = 'Salman';
+  // console.log(actor); // ERROR : Assignment to constant variable : that means can not assign value again to const variable within same block. but let and var allows this to set values.
+</script>
