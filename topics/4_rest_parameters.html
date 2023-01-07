@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="../styles.css" />
+<div class="topic_header">
+  <h3><b>Topic :</b> Rest Parameters</h3>
+  <p>
+    <b>Details :</b> Rest parameters is used to accept infinite parameters in a
+    function call.
+  </p>
+  <div>Execution Below</div>
+</div>
+
+<script>
+  // es5
+  // function sum(a, b) {
+  //   document.write(a + b);
+  // }
+  // sum(10, 20, 30, 40, 50);
+
+  // Output : (it will accept only first 2 arguments from all 5 args)
+  // 30
+
+  // es6 : so to accept multiple arguments without defining in parameters it will be like below
+  // function sum(...inputs) {
+  //   console.log(...inputs); // accept as an array
+  //   let total = 0;
+  //   for (let i of inputs) {
+  //     total += i;
+  //   }
+  //   document.write(total);
+  // }
+  // sum(10, 20, 30, 40, 50);
+
+  // Output : 150
+
+  // es6 one more example
+  function fun(a, b, ...c) {
+    console.log(`${a} ${b}`); // output : Ronaldo Neymar
+    console.log(c); // output : Array(3) [ "Pele", "Messi", "Edan" ]
+    console.log(c[0]); // output : Pele
+    console.log(c.length); // output : 3
+    console.log(c.indexOf('Edan')); // output : 2
+  }
+  fun('Ronaldo', 'Neymar', 'Pele', 'Messi', 'Edan');
+</script>
